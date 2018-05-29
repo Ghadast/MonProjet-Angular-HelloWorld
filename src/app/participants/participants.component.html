@@ -1,0 +1,36 @@
+<div class="jumbotron">
+  <h1 class="display-4">Learning Angular 6 !</h1>
+  <p class="lead">Bienvenue Ghada dans Angular 6</p>
+</div>
+
+<div class="card">
+  <div class="card-header bg-primary ">
+    <h2>Liste des participnts</h2>
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Numero</th>
+          <th>Nom</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let p of participants'>
+          <td scope="row">{{p.numero}}</td>
+          <td>{{p.nom}}</td>
+          <td>{{p.age}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+<h1>Liste des paricipants : </h1>
+<ul>
+  <li *ngFor='let p of participants'>{{p.nom}}</li>
+</ul>
